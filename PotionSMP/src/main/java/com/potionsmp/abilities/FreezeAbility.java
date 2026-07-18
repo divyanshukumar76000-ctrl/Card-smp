@@ -66,7 +66,7 @@ public class FreezeAbility implements Ability {
             100, radius / 2.0, 1.5, radius / 2.0, 0.3);
         center.getWorld().spawnParticle(Particle.SNOWFLAKE, center.clone().add(0,1,0),
             80, 1, 1, 1, 0.5);
-        center.getWorld().playSound(center, Sound.ENTITY_GUARDIAN_ELDER_CURSE, 1.5f, 0.5f);
+        center.getWorld().playSound(center, Sound.ENTITY_ELDER_GUARDIAN_CURSE, 1.5f, 0.5f);
         center.getWorld().playSound(center, Sound.BLOCK_POWDER_SNOW_STEP, 1.5f, 0.5f);
 
         // Freeze all nearby entities

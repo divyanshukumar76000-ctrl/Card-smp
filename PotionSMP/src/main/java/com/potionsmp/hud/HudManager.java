@@ -29,19 +29,17 @@ public class HudManager {
 
     private static final Map<PotionType, IconInfo> ICONS = new EnumMap<>(PotionType.class);
     static {
-        ICONS.put(PotionType.FIRE,   new IconInfo("\uE006", NamedTextColor.RED));
-        ICONS.put(PotionType.FREEZE, new IconInfo("\uE004", NamedTextColor.AQUA));
-        ICONS.put(PotionType.REGEN,  new IconInfo("\uE008", NamedTextColor.GREEN));
-        ICONS.put(PotionType.GLITCH, new IconInfo("\uE002", NamedTextColor.LIGHT_PURPLE));
-        ICONS.put(PotionType.SHIELD, new IconInfo("\uE003", NamedTextColor.WHITE));
-        ICONS.put(PotionType.SPEED,    new IconPair("", ""));
-        ICONS.put(PotionType.FEATHER,  new IconPair("", ""));
-        ICONS.put(PotionType.EMERALD,  new IconPair("", ""));
-        ICONS.put(PotionType.STRENGTH, new IconPair("", ""));
-        // Future:
-        // AQUA    -> \uE001
-        // ENDER   -> \uE005
-        // TELEPORT-> \uE007
+        ICONS.put(PotionType.FIRE,     new IconInfo("\uE006", NamedTextColor.RED));
+        ICONS.put(PotionType.FREEZE,   new IconInfo("\uE004", NamedTextColor.AQUA));
+        ICONS.put(PotionType.REGEN,    new IconInfo("\uE008", NamedTextColor.GREEN));
+        ICONS.put(PotionType.GLITCH,   new IconInfo("\uE002", NamedTextColor.LIGHT_PURPLE));
+        ICONS.put(PotionType.SHIELD,   new IconInfo("\uE003", NamedTextColor.WHITE));
+        ICONS.put(PotionType.ENDER,    new IconInfo("\uE005", NamedTextColor.DARK_PURPLE));
+        ICONS.put(PotionType.TELEPORT, new IconInfo("\uE007", NamedTextColor.DARK_AQUA));
+        ICONS.put(PotionType.SPEED,    new IconInfo("\uE009", NamedTextColor.YELLOW));
+        ICONS.put(PotionType.FEATHER,  new IconInfo("\uE00A", NamedTextColor.WHITE));
+        ICONS.put(PotionType.EMERALD,  new IconInfo("\uE00B", NamedTextColor.GREEN));
+        ICONS.put(PotionType.STRENGTH, new IconInfo("\uE00C", NamedTextColor.RED));
     }
 
     private final PotionSMP plugin;

@@ -92,8 +92,8 @@ public class GlitchAbility implements Ability {
         loc.getWorld().spawnParticle(Particle.END_ROD, loc, 30, 0.4, 0.4, 0.4, 0.3);
         loc.getWorld().spawnParticle(Particle.DUST, loc, 40,
             new Particle.DustOptions(org.bukkit.Color.fromRGB(150, 0, 255), 1.2f));
-        loc.getWorld().playSound(loc.getLocation(), Sound.ENTITY_ENDERMAN_TELEPORT, 1.5f, 0.4f);
-        loc.getWorld().playSound(loc.getLocation(), Sound.BLOCK_RESPAWN_ANCHOR_CHARGE, 1f, 1.5f);
+        loc.getWorld().playSound(loc, Sound.ENTITY_ENDERMAN_TELEPORT, 1.5f, 0.4f);
+        loc.getWorld().playSound(loc, Sound.BLOCK_RESPAWN_ANCHOR_CHARGE, 1f, 1.5f);
 
         // The ability "arms" — next direct hit or activation applies corruption
         // We store that the player has an active corruption ready to deploy

@@ -19,6 +19,10 @@ commands:
     description: Trigger the active ability currently equipped in Slot 2
     usage: /slot2
     permission: potionsmp.use
+  swap:
+    description: Swap the potions between Slot 1 and Slot 2
+    usage: /swap
+    permission: potionsmp.use
 
 permissions:
   potionsmp.use:

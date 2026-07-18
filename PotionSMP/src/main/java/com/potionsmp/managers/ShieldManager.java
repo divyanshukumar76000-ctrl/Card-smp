@@ -52,8 +52,8 @@ public class ShieldManager {
         loc.getWorld().spawnParticle(Particle.END_ROD, loc, 80, 1.5, 1.5, 1.5, 0.2);
         loc.getWorld().spawnParticle(Particle.DUST, loc, 60,
             new Particle.DustOptions(Color.WHITE, 1.5f));
-        loc.getWorld().playSound(loc.getLocation(), Sound.BLOCK_BEACON_ACTIVATE, 1.5f, 1.8f);
-        loc.getWorld().playSound(loc.getLocation(), Sound.ENTITY_ELDER_GUARDIAN_CURSE, 0.8f, 2f);
+        loc.getWorld().playSound(loc, Sound.BLOCK_BEACON_ACTIVATE, 1.5f, 1.8f);
+        loc.getWorld().playSound(loc, Sound.ENTITY_ELDER_GUARDIAN_CURSE, 0.8f, 2f);
 
         BukkitRunnable task = new BukkitRunnable() {
             int ticks = 0;
@@ -125,7 +125,7 @@ public class ShieldManager {
                 // Electric sparks
                 if (ticks % 8 == 0) {
                     center.getWorld().spawnParticle(Particle.ELECTRIC_SPARK, center, 4, 1.5, 1.5, 1.5, 0.1);
-                    center.getWorld().playSound(center.getLocation(), Sound.BLOCK_BEACON_AMBIENT, 0.3f, 2f);
+                    center.getWorld().playSound(center, Sound.BLOCK_BEACON_AMBIENT, 0.3f, 2f);
                 }
 
                 vertAngle += 9;    // clockwise
@@ -161,8 +161,8 @@ public class ShieldManager {
         }
         // Glass shard burst
         loc.getWorld().spawnParticle(Particle.ELECTRIC_SPARK, loc, 12, 0.5, 0.5, 0.5, 0.3);
-        loc.getWorld().playSound(loc.getLocation(), Sound.BLOCK_GLASS_BREAK, 1.5f, 2f);
-        loc.getWorld().playSound(loc.getLocation(), Sound.ENTITY_IRON_GOLEM_HURT, 0.8f, 2f);
+        loc.getWorld().playSound(loc, Sound.BLOCK_GLASS_BREAK, 1.5f, 2f);
+        loc.getWorld().playSound(loc, Sound.ENTITY_IRON_GOLEM_HURT, 0.8f, 2f);
     }
 
     private void deactivateShield(Player player) {
@@ -174,7 +174,7 @@ public class ShieldManager {
         if (player.isOnline()) {
             Location loc = player.getLocation().add(0, 1, 0);
             loc.getWorld().spawnParticle(Particle.END_ROD, loc, 30, 1, 1, 1, 0.1);
-            loc.getWorld().playSound(loc.getLocation(), Sound.BLOCK_BEACON_DEACTIVATE, 1f, 1.5f);
+            loc.getWorld().playSound(loc, Sound.BLOCK_BEACON_DEACTIVATE, 1f, 1.5f);
         }
     }
 

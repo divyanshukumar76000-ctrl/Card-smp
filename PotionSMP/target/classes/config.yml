@@ -61,6 +61,8 @@ messages:
     active-cooldown: 45         # seconds
   glitch-active: "&d⚡ System Corruption activated!"
   shield-active: "&f🛡 Divine Barrier activated!"
+  ender-active: "&5☽ Void Domain activated!"
+  teleport-active: "&3⟡ Phase Shift!"
 
   speed:
     active-cooldown: 28
@@ -77,3 +79,15 @@ messages:
   strength:
     active-duration: 15
     active-cooldown: 30
+
+  ender:
+    custom-model-data: 1005
+    passive-hits: 10
+    active-radius: 8
+    active-duration: 200           # ticks (10s)
+    active-cooldown: 40            # seconds
+
+  teleport:
+    custom-model-data: 1006
+    active-distance: 20            # blocks
+    active-cooldown: 20            # seconds

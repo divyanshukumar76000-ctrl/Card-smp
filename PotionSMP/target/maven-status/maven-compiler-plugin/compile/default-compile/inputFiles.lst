@@ -2,6 +2,7 @@
 /home/runner/workspace/PotionSMP/src/main/java/com/potionsmp/abilities/Ability.java
 /home/runner/workspace/PotionSMP/src/main/java/com/potionsmp/abilities/AbilityRegistry.java
 /home/runner/workspace/PotionSMP/src/main/java/com/potionsmp/abilities/EmeraldAbility.java
+/home/runner/workspace/PotionSMP/src/main/java/com/potionsmp/abilities/EnderAbility.java
 /home/runner/workspace/PotionSMP/src/main/java/com/potionsmp/abilities/FeatherAbility.java
 /home/runner/workspace/PotionSMP/src/main/java/com/potionsmp/abilities/FireAbility.java
 /home/runner/workspace/PotionSMP/src/main/java/com/potionsmp/abilities/FreezeAbility.java
@@ -10,8 +11,10 @@
 /home/runner/workspace/PotionSMP/src/main/java/com/potionsmp/abilities/ShieldAbility.java
 /home/runner/workspace/PotionSMP/src/main/java/com/potionsmp/abilities/SpeedAbility.java
 /home/runner/workspace/PotionSMP/src/main/java/com/potionsmp/abilities/StrengthAbility.java
+/home/runner/workspace/PotionSMP/src/main/java/com/potionsmp/abilities/TeleportAbility.java
 /home/runner/workspace/PotionSMP/src/main/java/com/potionsmp/commands/PotionCommand.java
 /home/runner/workspace/PotionSMP/src/main/java/com/potionsmp/commands/SlotCommand.java
+/home/runner/workspace/PotionSMP/src/main/java/com/potionsmp/commands/SwapCommand.java
 /home/runner/workspace/PotionSMP/src/main/java/com/potionsmp/gui/PotionGUI.java
 /home/runner/workspace/PotionSMP/src/main/java/com/potionsmp/hud/HudManager.java
 /home/runner/workspace/PotionSMP/src/main/java/com/potionsmp/listeners/CombatListener.java
@@ -19,6 +22,7 @@
 /home/runner/workspace/PotionSMP/src/main/java/com/potionsmp/listeners/GUIListener.java
 /home/runner/workspace/PotionSMP/src/main/java/com/potionsmp/listeners/JumpListener.java
 /home/runner/workspace/PotionSMP/src/main/java/com/potionsmp/managers/CooldownManager.java
+/home/runner/workspace/PotionSMP/src/main/java/com/potionsmp/managers/EnderDomainManager.java
 /home/runner/workspace/PotionSMP/src/main/java/com/potionsmp/managers/FireAuraManager.java
 /home/runner/workspace/PotionSMP/src/main/java/com/potionsmp/managers/FrozenPlayerManager.java
 /home/runner/workspace/PotionSMP/src/main/java/com/potionsmp/managers/GlitchManager.java
