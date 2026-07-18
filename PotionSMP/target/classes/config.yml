@@ -1,0 +1,79 @@
+# PotionSMP Configuration
+# Each potion type has its own settings block. To add a new potion later,
+# add a new block here following the same pattern, then implement its
+# Ability class (see com.potionsmp.abilities).
+
+potions:
+
+  freeze:
+    custom-model-data: 1009
+    passive-hits: 10
+    passive-stun-duration: 20      # ticks (1s) - "struck" / can't act
+    active-radius: 10
+    active-freeze-duration: 60     # ticks (3s)
+    active-cooldown: 45            # seconds
+
+  fire:
+    custom-model-data: 1010
+    passive-hits: 10
+    active-fire-radius: 5          # 10x10 = radius 5 (aura only, no blocks)
+    active-duration: 200           # ticks (10s)
+    active-cooldown: 30            # seconds
+    damage-per-second: 2.0         # aura damage tick
+
+  regen:
+    custom-model-data: 1007
+    active-jump-height: 10         # blocks
+    active-duration: 200           # ticks (10s) - regen + glow window
+    active-cooldown: 45            # seconds (900 ticks)
+    mace-dive-damage: 10.0         # true hearts (20.0 = 10 hearts)
+    regen-amplifier: 0             # Regeneration I
+
+# Global hit-count tolerance window. Hits must land within this many ticks
+# of each other to count toward the passive combo; this also smooths over
+# any single missed/duplicate damage event so "10 hits" triggers reliably
+# at hit #10 instead of drifting to 7/8/9 due to dropped events.
+passive-hit-window-ticks: 100
+
+messages:
+  freeze-active: "&b❄ Arctic Prison activated!"
+  fire-active: "&c🔥 Inferno Rage activated!"
+  regen-active: "&a❤ Vitality Surge activated!"
+  mace-dive-hit: "&a❤ Mace Dive struck %target% for massive damage!"
+  on-cooldown: "&7Ability on cooldown: &e%seconds%s"
+  no-potion: "&cThat slot is empty! Drink a potion first."
+  empty-slot: "&7Slot is empty."
+  gave-potion: "&aGave %potion% Potion to %player%"
+  drank-potion: "&a✦ %potion% Potion equipped to Slot %slot%!"
+  slot-replaced: "&7Your previous Slot %slot% potion (%old%) has been replaced."
+
+  glitch:
+    custom-model-data: 1008
+    passive-hits: 10
+    active-duration: 200        # ticks (10s)
+    active-cooldown: 35         # seconds
+    stutter-count: 4            # number of micro-teleports during duration
+    no-pickup-duration: 200     # ticks (10s)
+
+  shield:
+    custom-model-data: 1001
+    active-duration: 160        # ticks (8s)
+    active-cooldown: 45         # seconds
+  glitch-active: "&d⚡ System Corruption activated!"
+  shield-active: "&f🛡 Divine Barrier activated!"
+
+  speed:
+    active-cooldown: 28
+    shockwave-radius: 4.5
+    shockwave-damage: 5.0
+
+  feather:
+    glide-max-descent: -0.15
+
+  emerald:
+    active-duration: 11
+    active-cooldown: 50
+
+  strength:
+    active-duration: 15
+    active-cooldown: 30

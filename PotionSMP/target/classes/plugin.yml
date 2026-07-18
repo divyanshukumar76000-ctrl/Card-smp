@@ -1,0 +1,29 @@
+name: PotionSMP
+version: 3.0.0
+main: com.potionsmp.PotionSMP
+api-version: '1.21'
+author: PotionSMP
+description: Slot-based custom potion ability system (Fire, Freeze, Regen, and more).
+
+commands:
+  potionsmp:
+    description: Open PotionSMP GUI
+    usage: /potionSMP
+    aliases: [psmp, potion]
+    permission: potionsmp.use
+  slot1:
+    description: Trigger the active ability currently equipped in Slot 1
+    usage: /slot1
+    permission: potionsmp.use
+  slot2:
+    description: Trigger the active ability currently equipped in Slot 2
+    usage: /slot2
+    permission: potionsmp.use
+
+permissions:
+  potionsmp.use:
+    description: Use PotionSMP commands
+    default: true
+  potionsmp.give:
+    description: Give custom potions to players
+    default: op
